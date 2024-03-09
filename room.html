@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./image/logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Phòng nghỉ</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="./image/logomoi.jpg" alt="logo"></li>
+                <li class="hideonMobie"><a href="index.html">Trang chủ</a></li>
+                <li class="hideonMobie"><a href="destination.html">Điểm đến</a></li>
+                <li class="hideonMobie"><a href="room.html">Phòng nghỉ</a></li>
+                <li class="hideonMobie"><a href="service.html">Dịch vụ</a></li>
+                <li class="hideonMobie"><a href="contact.html">Liên hệ</a></li>
+                <li class="hideonMobie"><a href="login.html">Đặt phòng ngay</a></li>
+                <li onclick="showSidebar()" class="showonMobie"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+            <ul id="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="destination.html">Điểm đến</a></li>
+                <li><a href="room.html">Phòng nghỉ</a></li>
+                <li><a href="service.html">Dịch vụ</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="login.html">Đặt phòng ngay</a></li>
+            </ul>
+        </nav>
+        <div class="relaxroom">
+            <h2>Phòng nghỉ</h2>
+        </div>
+    </header>
+    <section>
+        <article>
+            <div>
+                <div class="showroom">
+                    <div class="roomquality">
+                        <h3>Prime Studio Space</h3>
+                        <h5>Khoảng không gian tiện lợi</h5>
+                        <h4><i class="fa-solid fa-city"></i> Số lượng: 20 phòng</h4>
+                        <h4><i class="fa-solid fa-vector-square"></i> Diện tích: 50m2</h4>
+                        <h4><i class="fa-solid fa-person"></i> Phù hợp cho 2 người</h4>
+                        <h4>Giá chỉ từ <span>700.000</span> VNĐ/phòng/đêm</h4>
+                        <div>
+                            <button class="more"><a href="studioRoom.html">Xem chi tiết</a></button>
+                            <button class="booking"><a href="#">Đặt phòng ngay</a></button>
+                        </div>
+                    </div>
+                    <div class="roomshow_img">
+                        <img src="./image/studios (1).jpg" alt="Phòng Studio">
+                    </div>
+                </div>
+                <div class="showroom1">
+                    <div class="roomshow_img1">
+                        <img src="./image/premium (2).jpg" alt="Phòng Premium">
+                    </div>
+                    <div class="roomquality1">
+                        <h3>Premier Haven</h3>
+                        <h5>Tận hưởng sự bình yên</h5>
+                        <h4><i class="fa-solid fa-city"></i> Số lượng: 10 phòng</h4>
+                        <h4><i class="fa-solid fa-vector-square"></i> Diện tích: 53m2</h4>
+                        <h4><i class="fa-solid fa-person"></i> Phù hợp cho 4 người</h4>
+                        <h4>Giá chỉ từ <span>720.000</span></h4>
+                        <div>
+                            <button class="more"><a href="premiumRoom.html">Xem chi tiết</a></button>
+                            <button class="booking"><a href="#">Đặt phòng ngay</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="showroom">
+                    <div class="roomquality">
+                        <h3>Splendid Retreat</h3>
+                        <h5>Ngắm nhìn những khoảng khắc đẹp</h5>
+                        <h4><i class="fa-solid fa-city"></i> Số lượng: 10 phòng</h4>
+                        <h4><i class="fa-solid fa-vector-square"></i> Diện tích: 72m2</h4>
+                        <h4><i class="fa-solid fa-person"></i> Phù hợp cho 8 người</h4>
+                        <h4>Giá chỉ từ <span>1.300.000</span> VNĐ/phòng/đêm</h4>
+                        <div>
+                            <button class="more"><a href="LuxyryRoom.html">Xem chi tiết</a></button>
+                            <button class="booking"><a href="#">Đặt phòng ngay</a></button>
+                        </div>
+                    </div>
+                    <div class="roomshow_img">
+                        <img src="./image/luxury (1).jpg" alt="Phòng Luxury">
+                    </div>
+                </div>
+                <div class="showroom1">
+                    <div class="roomshow_img1">
+                        <img src="./image/president (2).jpg" alt="Phòng President">
+                    </div>
+                    <div class="roomquality1">
+                        <h3>Grand Presidential Refuge</h3>
+                        <h5>Trọn vẹn khoảnh khắc quý tộc</h5>
+                        <h4><i class="fa-solid fa-city"></i> Số lượng: 5 phòng</h4>
+                        <h4><i class="fa-solid fa-vector-square"></i> Diện tích: 122m2</h4>
+                        <h4><i class="fa-solid fa-person"></i> Phù hợp cho 10 người</h4>
+                        <h4>Giá chỉ từ <span>2.000.000</span> VNĐ/phòng/đêm</h4>
+                        <div>
+                            <button class="more"><a href="presidentRoom.html">Xem chi tiết</a></button>
+                            <button class="booking"><a href="#">Đặt phòng ngay</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <div class="social">
+            <div>
+                <div>
+                    <img src="./image/fblogo.png" alt="Facebook">
+                    <img src="./image/iglogo.png" alt="Instagram">
+                    <img src="./image/ytlogo.png" alt="Youtube">
+                    <img src="./image/messlogo.png" alt="messenger">
+                </div>
+                <div>
+                    <h3>Nhận thông tin mới nhất và các ưu đãi của The Sóng</h3>
+                    <input type="email" placeholder="Hãy nhập Email">
+                    <button>Đăng ký</button>
+                </div>
+            </div>
+            <div class="contact_info">
+                <h4>Liên hệ đặt phòng chi tiết</h4>
+                <p><i class="fa-solid fa-phone"></i> Hotline: 0938.169.445-0962.575.217-0949.600.555</p>
+                <p><i class="fa-solid fa-fax"></i> Phone/Fax: 028.3888.3379</p>
+                <p><i class="fa-solid fa-map-location-dot"></i> Địa chỉ: 28 Đường Thi Sách, phường Thắng Tam, Thành phố Vũng Tàu, Bà Rịa- Vũng Tàu</p>
+                <p><i class="fa-solid fa-map-location-dot"></i> Địa chỉ trụ sở chính: 60 Nguyễn ĐÌnh Chiểu, Đa Kao, Quận 1, Thành phó Hồ Chí Minh</p>
+                <p><i class="fa-solid fa-phone"></i> Điện thoại: 1800.0005</p>
+                <p><i class="fa-solid fa-business-time"></i> Thời gian làm việc: Thứ 2- Thứ 6: 08h00-23h00</p>
+                <p><i class="fa-solid fa-envelope"></i> Email: Thesong.service@gmail.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy 2024 copyright by The Sóng</p>
+        </div>
+    </footer>
+    <script>
+        function showSidebar(){
+            const Sidebar = document.getElementById("sidebar");
+            Sidebar.style.display="flex";
+        }
+        function hideSidebar (){
+            const Sidebar= document.getElementById("sidebar");
+            Sidebar.style.display="none";
+        }
+    </script>
+</body>
+</html>

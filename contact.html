@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./image/logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Điểm đến</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="./image/logomoi.jpg" alt="logo"></li>
+                <li class="hideonMobie"><a href="index.html">Trang chủ</a></li>
+                <li class="hideonMobie"><a href="destination.html">Điểm đến</a></li>
+                <li class="hideonMobie"><a href="room.html">Phòng nghỉ</a></li>
+                <li class="hideonMobie"><a href="service.html">Dịch vụ</a></li>
+                <li class="hideonMobie"><a href="contact.html">Liên hệ</a></li>
+                <li class="hideonMobie"><a href="login.html">Đặt phòng ngay</a></li>
+                <li onclick="showSidebar()" class="showonMobie"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+            <ul id="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="destination.html">Điểm đến</a></li>
+                <li><a href="room.html">Phòng nghỉ</a></li>
+                <li><a href="service.html">Dịch vụ</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="login.html">Đặt phòng ngay</a></li>
+            </ul>
+        </nav>
+        <div id="contactimg">
+            <img src="./image/contact.png" alt="Liên hệ với chúng tôi">
+        </div>
+    </header>
+    <section>
+        <article>
+            <div id="contactlogo">
+                <img src="./image/logomoi1.jpg" alt="Nhãn hiệu">
+                <h2>Cám ơn vì đã sử dụng dịch vụ của The Sóng</h2>
+            </div>
+            <div id="contactinfo">
+                <div id="contactsend">
+                    <h3>Để lại lời nhắn cho chúng tôi</h3>
+                    <form action="#">
+                        <input type="text" placeholder="Họ và tên" name="fullname">
+                        <input type="email" placeholder="Email">
+                        <select name="service">
+                            <option value="Đặt phòng">Đặt phòng</option>
+                            <option value="Dịch vụ">Dịch vụ</option>
+                            <option value="Sự kiện">Sự kiện</option>
+                            <option value="Khác">Khác</option>
+                        </select>
+                        <textarea name="Lời nhắn" cols="30" rows="10" placeholder="Lời nhắn của bạn"></textarea>
+                        <input type="submit" value="Gửi">
+                    </form>
+                </div>
+                <div>
+                    <div>
+                        <h3>THÔNG TIN LIÊN HỆ</h3>
+                        <p><i class="fa-solid fa-map-location-dot"></i> Địa chỉ: 28 Đường Thi Sách, phường Thắng Tam, Thành phố Vũng Tàu, Bà Rịa- Vũng Tàu</p>
+                        <p><i class="fa-solid fa-phone"></i> Hotline 1: 0938.169.445</p>
+                        <p><i class="fa-solid fa-phone"></i> Hotline 2: 0962.575.217</p>
+                        <p><i class="fa-solid fa-phone"></i> Hotline 3: 0949.600.555</p>
+                        <p><i class="fa-solid fa-fax"></i> Phone/Fax: 028.3888.3379</p>
+                        <h3>PHÒNG DỊCH VỤ KHÁCH HÀNG</h3>
+                        <p><i class="fa-solid fa-map-location-dot"></i> Địa chỉ: 60 Nguyễn ĐÌnh Chiểu, Đa Kao, Quận 1, Thành phó Hồ Chí Minh</p>
+                        <p><i class="fa-solid fa-phone"></i> Điện thoại: 1800.0005</p>
+                        <p><i class="fa-solid fa-business-time"></i> Thời gian làm việc: Thứ 2- Thứ 6: 08h00-23h00</p>
+                    </div>
+                    <div>
+                        <h3>CÁC LOẠI PHÒNG</h3>
+                        <p><i class="fa-solid fa-house"></i> Loại Luxury 72m2 3 phòng ngủ</p>
+                        <p><i class="fa-solid fa-house"></i> Loại Premium 53m2 2 phòng ngủ</p>
+                        <p><i class="fa-solid fa-house"></i> Loại President 122m2 3 phòng ngủ</p>
+                        <p><i class="fa-solid fa-house"></i> Loại Studios 40-45m2 1 phòng ngủ</p>
+                    </div>
+                </div>
+            </div>
+            <div id="contactques">
+                <div class="quesblock">
+                    <button class="question">Chính sách đặt phòng</button>
+                    <div class="answer">
+                    <p>
+                        Mọi yêu cầu đặt phòng phải được gửi đến Trung tâm đặt phòng của khác sạn The Sóng bằng điện thoại hoặc FAX tới số: 028.3888.3379 hoặc email: Thesong.service@gmail.com. Đặt phòng chỉ được xác nhận trong điều kiện phòng trống và phải được xác nhận bằng văn bản chính thức của khách sạn thông qua email chính thức.
+                    </p>
+                </div>
+                </div>
+                <div class="quesblock">
+                    <button class="question">Điều kiện thanh toán</button>
+                    <div class="answer">
+                        <p>
+                            Để đảm bảo chắc chắn cho việc đặt phòng của Quý khách, khách sạn áp dụng thu tiền đặt cọc đối với tất cả các yêu cầu đặt phòng, mức đặt cọc là 30% tổng giá trị dịch vụ, thời gian đặt cọc trước ngày nhận phòng ít nhất 10 ngày. Phần còn lại sẽ được thanh toán nốt khi khách trả phòng.
+                        </p>
+                </div>
+                </div>
+                <div class="quesblock">
+                    <button class="question">Chính sách hoàn phòng, hủy phòng</button>
+                    <div class="answer">
+                        <p>
+                            Trường hợp khách hàng huỷ dịch vụ đã đặt, tiền đặt cọc sẽ không được hoàn trả lại vì bất kỳ lý do gì. Khoản tiền đặt cọc sẽ được bảo lưu đến lần đặt phòng kế tiếp trong các trường hợp bất khả kháng về thời tiết như thiên tai, bão lũ….và chỉ được xác nhận khi có phòng trống.
+                            Hủy phòng trong vòng 72 giờ hoặc hủy không thông báo, phí phạt hủy sẽ tính bằng 100% tổng giá trị tiền phòng đã đặt.
+                            Để hủy đơn phòng đã đặt, quý khách hủy trên trang chính thức của The Sóng hoặc liên hệ phòng quản lí dịch vụ: 028.3888.3379 hoặc email: Thesong.service@gmail.com để được trợ giúp.
+                        </p>
+                    </div>
+                </div>
+                <div class="quesblock">
+                    <button class="question">Giờ nhận phòng và trả phòng</button>
+                    <div class="answer">
+                        <p>
+                            Giờ nhận phòng là sau 14h00 và giờ trả phòng là trước 12h00 ( có thể gia hạn thêm 1 giờ đồng hồ).
+                            Nhận phòng sớm trước 14h00, trả phòng muộn sau 15h00: tính phí 50% tiền phòng.
+                            Trả phòng muộn sau 19h00: tính phí 100% tiền phòng.
+                            Mọi yêu cầu về nhận phòng sớm và trả phòng muộn chỉ được xác nhận trong trường hợp còn phòng trống.
+                            Các dịch vụ đặ phòng bên lề như trực tiếp tại quầy hoặc có sự cố bất khả kháng sẽ không bị ảnh hưởng.
+                        </p>
+                    </div>
+                </div>
+                <div class="quesblock">
+                    <button class="question">Nội quy</button>
+                    <div class="answer">
+                        <p><i class="fa-solid fa-right-long"></i>Thời gian yên tĩnh: <br> Để tôn trọng cư dân xung quanh, xin vui lòng không gây ồn sau 22h.</p>
+                        <p><i class="fa-solid fa-right-long"></i>Xác nhận danh tính: <br>Vui lòng xuất trình CMND/CCCD hoặc hộ chiếu cho quản gia khi nhận phòng.</p>
+                        <p><i class="fa-solid fa-right-long"></i>Tự bảo quản đồ dùng cá nhân: <br>Hãy tự quản lý và kiểm tra kỹ đồ dùng cá nhân của bạn trước khi trả phòng. Chúng tôi không chịu trách nhiệm về bất kỳ mất mát nào.</p>
+                        <p><i class="fa-solid fa-right-long"></i>An toàn và Ứng xử: <br>Không được thực hiện cá độ đánh bạc dưới bất kỳ hình thức nào.</p>
+                        <p><i class="fa-solid fa-right-long"></i>Nội dung truyền thông: <br>Xin vui lòng không trình chiếu bất kỳ tài liệu nào mang tính chất khiêu dâm, phản động tại Homestay.</p>
+                        <p><i class="fa-solid fa-right-long"></i>Vấn đề đạo đức và pháp luật: <br>Không được thực hiện mua bán dịch vụ mại dâm, hoặc đưa gái mại dâm vào Homestay.</p>
+                        <p><i class="fa-solid fa-right-long"></i>Chất cấm và vũ khí: <br>Không được sử dụng, lưu trữ chất kích thích hoặc vũ khí chất độc cháy nổ tại Homestay.</p>
+                        <p><i class="fa-solid fa-right-long"></i>Bảo quản trang thiết bị: <br>Hãy giữ gìn bảo quản trang thiết bị trong Homestay. Nếu gây hỏng hoặc mất, bạn sẽ chịu trách nhiệm bồi thường.</p>
+                        <h4> Vui lòng tuân theo nội quy và hướng dẫn trên để đảm bảo một kỳ nghỉ an lành và thoải mái tại The Sóng Vũng Tàu. Chúng tôi xin cảm ơn sự hợp tác của bạn!</h4>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <div class="social">
+            <div>
+                <div>
+                    <img src="./image/fblogo.png" alt="Facebook">
+                    <img src="./image/iglogo.png" alt="Instagram">
+                    <img src="./image/ytlogo.png" alt="Youtube">
+                    <img src="./image/messlogo.png" alt="messenger">
+                </div>
+                <div>
+                    <h3>Nhận thông tin mới nhất và các ưu đãi của The Sóng</h3>
+                    <input type="email" placeholder="Hãy nhập Email">
+                    <button>Đăng ký</button>
+                </div>
+            </div>
+            <div class="contact_info">
+                <h4>Liên hệ đặt phòng chi tiết</h4>
+                <p><i class="fa-solid fa-phone"></i> Hotline: 0938.169.445-0962.575.217-0949.600.555</p>
+                <p><i class="fa-solid fa-fax"></i> Phone/Fax: 028.3888.3379</p>
+                <p><i class="fa-solid fa-map-location-dot"></i> Địa chỉ: 28 Đường Thi Sách, phường Thắng Tam, Thành phố Vũng Tàu, Bà Rịa- Vũng Tàu</p>
+                <p><i class="fa-solid fa-map-location-dot"></i> Địa chỉ trụ sở chính: 60 Nguyễn ĐÌnh Chiểu, Đa Kao, Quận 1, Thành phó Hồ Chí Minh</p>
+                <p><i class="fa-solid fa-phone"></i> Điện thoại: 1800.0005</p>
+                <p><i class="fa-solid fa-business-time"></i> Thời gian làm việc: Thứ 2- Thứ 6: 08h00-23h00</p>
+                <p><i class="fa-solid fa-envelope"></i> Email: Thesong.service@gmail.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy 2024 copyright by The Sóng</p>
+        </div>
+    </footer>
+    <script>
+        function showSidebar(){
+            const Sidebar = document.getElementById("sidebar");
+            Sidebar.style.display="flex";
+        }
+        function hideSidebar (){
+            const Sidebar= document.getElementById("sidebar");
+            Sidebar.style.display="none";
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            const buttonclicked = document.querySelectorAll(".question");
+            const divshow = document.querySelectorAll(".answer");
+            buttonclicked.forEach((button, index) => {
+                let isVisible = false;
+                button.addEventListener('click', function() {
+                    if (isVisible) {
+                        divshow[index].classList.add('slidein');
+                        divshow[index].classList.remove('animateout');
+                        divshow[index].style.animationDirection = 'normal';
+                        setTimeout(() => {
+                            divshow[index].style.display = 'none';
+                        }, 250);
+                    } else {
+                        divshow[index].style.display = 'block';
+                        divshow[index].classList.add('animateout');
+                        divshow[index].classList.remove('slidein');
+                        divshow[index].style.animationDirection = 'normal';
+                    }
+                    isVisible = !isVisible;
+                });
+            });
+        });
+    </script>
+</body>
+</html>

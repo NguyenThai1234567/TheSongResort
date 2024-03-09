@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="regis.css">
+    <link rel="icon" href="./image/logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Đăng kí</title>
+</head>
+<body>
+    <section>
+        <div class="formbox">
+            <form action="#">
+                <h2>ĐĂNG KÍ TÀI KHOẢN</h2>
+                <div class="inputbox">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="name" maxlength="50" required>
+                    <label for="name">Họ và tên</label>
+                </div>
+                <div class="inputbox">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="inputbox">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="tel" id="tell" maxlength="11" required>
+                    <label for="email">Số điện thoại</label>
+                </div>
+                <div class="inputbox">
+                    <i class="fa-solid fa-key"></i>
+                    <input type="password" id="pass" minlength="6" maxlength="20" required>
+                    <label for="pass">Mật khẩu</label>
+                </div>
+                <div class="inputbox">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="confpass" minlength="6" maxlength="20" required>
+                    <label for="confpass">Nhập lại mật khẩu</label>
+                </div>
+                <label for="showhide" class="showpass"><input type="checkbox" id="showhide">Hiện mật khẩu</label>
+                <button id="regisbutton" onclick="checkvalue()">Tạo tài khoản</button>
+                <div class="login">
+                    <p>Đã có tài khoản? <a href="login.html">Đăng nhập.</a></p>
+                </div>
+            </form>   
+        </div>
+        <div id="loader"></div>
+    </section>
+    <script>
+        document.getElementById("pass").addEventListener("input", function(data) {
+            var Pass = data.target.value;
+            var englishRegex = /^[A-Za-z0-9!@#]+$/;
+            if (!englishRegex.test(Pass)) {
+                data.target.value = '';
+            }
+        });
+        document.getElementById("tell").addEventListener("input", function(data2){
+            var Tell = data2.target.value;
+            var tellRegex = /^\d+$/;
+            if(!tellRegex.test(Tell)){
+                data2.target.value = '';
+            }
+        });
+        document.getElementById("confpass").addEventListener("input", function(data1) {
+            var Pass1 = data1.target.value;
+            var englishRegex = /^[A-Za-z0-9!@#]+$/;
+            if (!englishRegex.test(Pass1)) {
+                data1.target.value = '';
+            }
+        });
+        var checkbox=document.getElementById("showhide");
+        checkbox.addEventListener("change", function() {
+            var Password = document.getElementById("pass");
+            var Confpassword = document.getElementById("confpass");
+            if(checkbox.checked){Password.type="text";Confpassword.type="text";}
+            else {Password.type="password";Confpassword.type="password";}
+        })
+        function checkvalue(){
+            var Name=document.getElementById("name");
+            if(Name.value==""){
+                alert("Bạn chưa nhập họ và tên.");
+                Name.focus();
+                return false;
+            }
+            var Email=document.getElementById("email");
+            regex=/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
+            if(Email.value==""){
+                alert("Bạn chưa nhập Email.");
+                Email.focus();
+                return false;
+            }
+            else if(!regex.test(Email.value)){
+                alert("Email không đúng định dạng!");
+                Email.focus();
+                return false;
+            }
+            var Password=document.getElementById("pass");
+            var rightpassRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
+            if(Password.value==""){
+                alert("Bạn chưa nhập mật khẩu!");
+                Password.focus();
+                return false;
+            } else if(!rightpassRegex.test(Password.value)){
+                    alert("Mật khẩu phải có ít nhất 8 kí tự, 1 kí tự in hoa và 1 chữ số!");
+                    Password.focus();
+                    return false;
+                }
+            var Confpass=document.getElementById("confpass")
+            if (Confpass.value==""){
+                alert("Bạn chưa nhập lại mật khẩu!");
+                Confpass.focus();
+                return false;
+            }
+            else if (Password.value!==Confpass.value){
+                alert("Mật khẩu không trùng khớp!")
+                Confpass.focus();
+                return false;
+            }
+            var allConditionsAreMet=true;
+            if (allConditionsAreMet) {
+                alert("Bạn đã tạo tài khoản thành công! Xin chúc mừng.");
+                var Loader = document.getElementById("loader");
+                Loader.style.display = "block";
+                setTimeout(function() {
+                window.location.href="index.html"
+                }, 3000);
+                return true;
+            };
+        }
+    </script>
+</body>
+</html>

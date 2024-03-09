@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./image/logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Điểm đến</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="./image/logomoi.jpg" alt="logo"></li>
+                <li class="hideonMobie"><a href="index.html">Trang chủ</a></li>
+                <li class="hideonMobie"><a href="destination.html">Điểm đến</a></li>
+                <li class="hideonMobie"><a href="room.html">Phòng nghỉ</a></li>
+                <li class="hideonMobie"><a href="service.html">Dịch vụ</a></li>
+                <li class="hideonMobie"><a href="contact.html">Liên hệ</a></li>
+                <li class="hideonMobie"><a href="login.html">Đặt phòng ngay</a></li>
+                <li onclick="showSidebar()" class="showonMobie"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+            <ul id="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="destination.html">Điểm đến</a></li>
+                <li><a href="room.html">Phòng nghỉ</a></li>
+                <li><a href="service.html">Dịch vụ</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="login.html">Đặt phòng ngay</a></li>
+            </ul>
+        </nav>
+        <div class="headerimg">
+            <img src="./image/toanha1.jpg" alt="Tòa nhà chính">
+        </div>
+    </header>
+    <section>
+        <article>
+            <div class="destination">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>Điểm đến</h3>
+                <h2>Bà Rịa- Vũng Tàu</h2>
+                <p>Bà Rịa-Vũng Tàu, một tỉnh nằm ở miền Đông Nam Bộ của Việt Nam, nổi tiếng với sự kết hợp độc đáo giữa thực phẩm hải sản tươi ngon và cảnh đẹp tự nhiên hùng vĩ, thu hút hàng nghìn du khách mỗi năm. Với một vị trí địa lý đắc địa bên cạnh bờ biển dài và những dãy núi xanh mát, Bà Rịa-Vũng Tàu là điểm đến lý tưởng cho những ai muốn trải nghiệm sự phong phú của văn hóa và thiên nhiên Việt Nam.
+                    Thực phẩm hải sản là một trong những điểm đặc biệt nổi bật của Bà Rịa-Vũng Tàu. Với một lượng lớn ngư dân và hải sản phong phú từ biển, du khách sẽ được thưởng thức những món ăn hải sản tươi ngon và độc đáo tại các nhà hàng và quán ăn nơi đây. Từ các món cá như cá mú, cá lăng, đến các loại hàu, sò điệp và tôm, không gì tuyệt vời hơn khi thưởng thức hải sản tươi ngon ngay tại bờ biển Vũng Tàu.
+                    Ngoài thực phẩm hải sản, Bà Rịa-Vũng Tàu còn có nhiều điểm du lịch nổi tiếng thu hút du khách. Bãi biển Bãi Sau là điểm đến phổ biến cho những ai yêu thích bãi biển dài và cát trắng mịn. Hòn Bà, với cảnh quan hùng vĩ và hòa mình vào thiên nhiên, thu hút những người muốn thư giãn và tận hưởng không gian yên bình. Đền thờ chùa Linh Sơn, một công trình kiến trúc tôn giáo độc đáo, cũng là điểm đến thú vị cho những ai quan tâm đến lịch sử và văn hóa địa phương.
+                    Vị trí địa lý của Bà Rịa-Vũng Tàu cũng là một điểm mạnh, nằm cách Thành phố Hồ Chí Minh chỉ khoảng 2-3 giờ lái xe, là điểm dừng chân lý tưởng cho những chuyến du lịch ngắn ngày hoặc cuối tuần từ thành phố lớn. Hơn nữa, sự gần gũi với các điểm du lịch khác như Đồng Nai, Long Hải và Bà Rịa, cũng là một lợi thế cho việc khám phá vùng đất này.
+                    Với sự kết hợp hài hòa giữa ẩm thực đa dạng, cảnh đẹp tự nhiên và vị trí địa lý thuận lợi, Bà Rịa-Vũng Tàu tự hào là điểm đến lý tưởng cho mọi du khách muốn trải nghiệm sự phong phú và đa dạng của miền Nam Việt Nam.
+                </p>
+                <img src="./image/Vungtauvedem.png" alt="Vũng Tàu về dêm">
+            </div>
+            <div class="destination">
+                <i class="fa-solid fa-hotel"></i>
+                <h3>Khách sạn The Sóng</h3>
+                <p>
+                    Nằm tại trái tim của thành phố biển Vũng Tàu, Khách sạn The Sóng là biểu tượng của sự đẳng cấp và sang trọng trong lĩnh vực khách sạn và nghỉ dưỡng. Với vị trí đắc địa bên cạnh bãi biển Bãi Sau, khách sạn The Sóng không chỉ mang đến trải nghiệm lưu trú tuyệt vời mà còn là điểm đến lý tưởng cho những ai muốn khám phá vẻ đẹp và sức hút của Vũng Tàu.
+                    Khách sạn The Sóng tự hào về sự kết hợp tinh tế giữa kiến trúc hiện đại và không gian thoải mái. Với các căn phòng tiện nghi và hiện đại được trang bị đầy đủ tiện ích, du khách sẽ được tận hưởng không gian lưu trú thoải mái và tiện nghi nhất. Mỗi căn phòng đều được thiết kế với sự chăm sóc tỉ mỉ đến từng chi tiết, từ nội thất sang trọng đến cửa sổ lớn mang đến ánh sáng tự nhiên và tầm nhìn tuyệt đẹp ra biển.
+                    Ngoài các dịch vụ lưu trú, khách sạn The Sóng còn mang đến cho du khách một loạt các tiện ích và dịch vụ cao cấp. Từ nhà hàng sang trọng phục vụ các món ăn đa dạng và ngon miệng, đến spa và phòng gym hiện đại giúp du khách thư giãn và làm mới lại cơ thể và tinh thần sau những ngày dài tham quan và khám phá.
+                    Không chỉ là điểm dừng chân lý tưởng cho du khách, khách sạn The Sóng còn là địa điểm tổ chức sự kiện và hội nghị chuyên nghiệp. Với các phòng hội nghị và sảnh tiệc rộng rãi và hiện đại, khách sạn này là lựa chọn hoàn hảo cho các sự kiện từ nhỏ đến lớn, từ hội nghị doanh nghiệp đến tiệc cưới sang trọng.
+                    Với vị trí đắc địa, kiến trúc đẳng cấp và dịch vụ tiện ích hàng đầu, Khách sạn The Sóng không chỉ là nơi lưu trú mà còn là điểm đến lý tưởng cho những chuyến du lịch và kỳ nghỉ đáng nhớ tại Vũng Tàu.
+                </p>
+                <img src="./image/toanha1.jpg" alt="Tòa nhà chính">
+            </div>
+            <div class="destination">
+                <i class="fa-solid fa-clock"></i>
+                <h3>Thời điểm lí tưởng ghé thăm</h3>
+                <p><span>Từ tháng 10 đến tháng 4: </span>là thời gian tốt nhất để khám phá các địa điểm văn hóa và tâm linh. Vào thời điểm này, thời tiết ấm áp và dễ chịu, và không có quá nhiều du khách, giúp bạn tận hưởng trải nghiệm thư giãn và yên bình hơn.Hơn thế nữa, bạn có thể dễ dàng tiếp cận các địa điểm văn hóa như Đền thờ chùa Linh Sơn, hoặc những khu vực tâm linh như Hòn Bà, với khoảng cách chỉ khoảng 10-20 km.</p>
+                <p><span>Từ tháng 5 đến tháng 9: </span>là khoảng thời gian nắng gay gắt nhất trong năm rất phù hợp cho việc đắm mình dưới dòng nước mặn mát cũng bãi cát vàng ươm thỏa sức thể hiện khả năng khéo léo trong vui chơi. Bên cạnh đó, bãi biển Bãi Sau chỉ cách khách sạn một đoạn ngắn, khoảng 1-2 km.</p>
+            </div>
+            <div class="changeimg">
+                <h3>TOP 10 địa điểm nên đi khi ở khách sạn The Sóng</h3>
+                <div class="slidechange">
+                    <img src="./image/benduthuymaria.png" alt="Bến du thuyền Maria">
+                    <img src="./image/doiconheo.png" alt="Đồi con heo">
+                    <img src="./image/dongcuusuoinghe.png" alt="Đồng cừu suối nghệ">
+                    <img src="./image/hem444.png" alt="Hẻm 444">
+                    <img src="./image/hococ.png" alt="Hồ cốc">
+                    <img src="./image/hodaxanh.png" alt="Hồ đá xanh">
+                    <img src="./image/homay.png" alt="Hồ mây">
+                    <img src="./image/honba.png" alt="Hòn bà">
+                    <img src="./image/nhaupnguoc.png" alt="Nhà úp ngược">
+                    <img src="./image/vuonquocgiabinhchau.png" alt="Vườn quốc gia Bình Châu">
+                </div>
+                <button class="prev" onclick="prevSlide()"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="next" onclick="nextSlide()"><i class="fa-solid fa-chevron-right"></i></button>
+              </div>
+            <div class="destination">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.8982221622814!2d107.0934612736205!3d10.350022689773994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31756f26d62cab0d%3A0xbb7b15a7c5e41f0b!2sThe%20Song%20House%20for%20rent!5e0!3m2!1svi!2s!4v1709557231345!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </article>
+        <footer>
+            <div class="social">
+                <div>
+                    <div>
+                        <img src="./image/fblogo.png" alt="Facebook">
+                        <img src="./image/iglogo.png" alt="Instagram">
+                        <img src="./image/ytlogo.png" alt="Youtube">
+                        <img src="./image/messlogo.png" alt="messenger">
+                    </div>
+                    <div>
+                        <h3>Nhận thông tin mới nhất và các ưu đãi của The Sóng</h3>
+                        <input type="email" placeholder="Hãy nhập Email">
+                        <button>Đăng ký</button>
+                    </div>
+                </div>
+                <div class="contact_info">
+                    <h4>Liên hệ đặt phòng chi tiết</h4>
+                    <p><i class="fa-solid fa-phone"></i> Hotline: 0938.169.445-0962.575.217-0949.600.555</p>
+                    <p><i class="fa-solid fa-fax"></i> Phone/Fax: 028.3888.3379</p>
+                    <p><i class="fa-solid fa-map-location-dot"></i> Địa chỉ: 28 Đường Thi Sách, phường Thắng Tam, Thành phố Vũng Tàu, Bà Rịa- Vũng Tàu</p>
+                    <p><i class="fa-solid fa-map-location-dot"></i> Địa chỉ trụ sở chính: 60 Nguyễn ĐÌnh Chiểu, Đa Kao, Quận 1, Thành phó Hồ Chí Minh</p>
+                    <p><i class="fa-solid fa-phone"></i> Điện thoại: 1800.0005</p>
+                    <p><i class="fa-solid fa-business-time"></i> Thời gian làm việc: Thứ 2- Thứ 6: 08h00-23h00</p>
+                    <p><i class="fa-solid fa-envelope"></i> Email: Thesong.service@gmail.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy 2024 copyright by The Sóng</p>
+            </div>
+        </footer>
+    </section>
+    <script>
+        let slideIndex = 0;
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.slidechange img');
+            if (index >= slides.length) {
+                slideIndex = 0;
+            } else if (index < 0) {
+                slideIndex = slides.length - 1;
+            }
+            slides.forEach(slide =>  {
+                setTimeout(function() {
+                    slide.style.display = 'none';
+                }, 500);
+            });
+            setTimeout(function()  {
+                slides[slideIndex].style.display = 'block';
+            }, 500);
+        }
+        function prevSlide() {
+            showSlide(--slideIndex);
+        }
+        function nextSlide() {
+            showSlide(++slideIndex);
+        }
+        showSlide(slideIndex);
+        function showSidebar(){
+            const Sidebar = document.getElementById("sidebar");
+            Sidebar.style.display="flex";
+        }
+        function hideSidebar (){
+            const Sidebar= document.getElementById("sidebar");
+            Sidebar.style.display="none";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./image/logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Premium Room</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="./image/logomoi.jpg" alt="logo"></li>
+                <li class="hideonMobie"><a href="index.html">Trang chủ</a></li>
+                <li class="hideonMobie"><a href="destination.html">Điểm đến</a></li>
+                <li class="hideonMobie"><a href="room.html">Phòng nghỉ</a></li>
+                <li class="hideonMobie"><a href="service.html">Dịch vụ</a></li>
+                <li class="hideonMobie"><a href="contact.html">Liên hệ</a></li>
+                <li class="hideonMobie"><a href="login.html">Đặt phòng ngay</a></li>
+                <li onclick="showSidebar()" class="showonMobie"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+            <ul id="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="destination.html">Điểm đến</a></li>
+                <li><a href="room.html">Phòng nghỉ</a></li>
+                <li><a href="service.html">Dịch vụ</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="login.html">Đặt phòng ngay</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <article>
+            <div  class="premium">
+                <div>
+                    <img src="./image/premium (1).jpg" alt="Ảnh phòng Premium" class="premium_img">
+                    <img src="./image/premium (2).jpg" alt="Ảnh phòng Premium" class="premium_img">
+                    <img src="./image/premium (3).jpg" alt="Ảnh phòng Premium" class="premium_img">
+                    <img src="./image/premium (4).jpg" alt="Ảnh phòng Premium" class="premium_img">
+                    <img src="./image/premium (5).jpg" alt="Ảnh phòng Premium" class="premium_img">
+                    <img src="./image/premium (6).jpg" alt="Ảnh phòng Premium" class="premium_img">
+                </div>
+                <div id="premium_price">
+                    <h2>Phòng Premium 2 phòng ngủ</h2>
+                    <h4>Giá phòng ngày thường(Từ thứ 2 đế thứ 5): <span>720.000</span> VNĐ/phòng/đêm</h4>
+                    <h4>Giá phòng ngày cao điểm(thứ 6 đến chủ nhật hoặc các ngày lễ, tết): <span>1.780.000</span> VNĐ/phòng/đêm</h4>
+                    <h4><i class="fa-solid fa-house"></i> Số phòng:10 phòng</h4>
+                    <h4><i class="fa-solid fa-vector-square"></i> Diện tích: 53m2</h4>
+                    <h4><i class="fa-solid fa-bed"></i> Sức chứa tối đa: 4-5 người</h4>
+                    <h4><i class="fa-solid fa-couch"></i> Sofa: 1.4x2m</h4>
+                    <h4><i class="fa-solid fa-bed"></i> Giường: 1m8x2m và 1m6x2m</h4>
+                    <h4><i class="fa-solid fa-square-parking"></i> Phí gửi xe qua đêm(4-7 chỗ): 50.000 Vnđ 1 đêm</h4>
+                    <h4><i class="fa-solid fa-clock"></i> Thời gian nhận phòng: 12h00</h4>
+                    <h4><i class="fa-solid fa-clock"></i> Thời gian trả phòng: 14h00</h4>
+                    <button><a href="#">Đặt phòng</a></button>
+                </div>
+            </div>
+            <div id="premium_service">
+                <h3>Tiện ích khác</h3>
+                <div>
+                    <p><i class="fa-solid fa-chair"></i> Ban công riêng</p>
+                    <p><i class="fa-solid fa-mattress-pillow"></i> Nệm thêm</p>
+                    <p><i class="fa-solid fa-bell-concierge"></i> các dịch vụ trong nhà như: bàn ủi, máy giặc, nồi lẩu điện,...</p>
+                    <p><i class="fa-solid fa-table"></i> Bàn làm việc</p>
+                    <p><i class="fa-solid fa-mug-saucer"></i> Bao gồm bữa sáng</p>
+                    <p><i class="fa-solid fa-bath"></i> Bồn tắm</p>
+                    <p><i class="fa-solid fa-child"></i> Nơi trông giữ trẻ em</p>
+                    <p><i class="fa-solid fa-wind"></i> Điều hòa nhiệt độ</p>
+                    <p><i class="fa-solid fa-mug-hot"></i> Trà & cafe trong phòng</p>
+                    <p><i class="fa-solid fa-shower"></i> Phòng tắm & wc riêng</p>
+                    <p><i class="fa-solid fa-martini-glass"></i> Quầy bar nhỏ</p>
+                    <p><i class="fa-solid fa-tv"></i> Tivi</p>
+                    <p><i class="fa-solid fa-snowflake"></i> Tủ lạnh</p>
+                    <p><i class="fa-solid fa-wifi"></i> Wifi miễn phí</p>
+                    <p><i class="fa-solid fa-water-ladder"></i> Hồ bơi vô cực</p>
+                    <p><i class="fa-solid fa-dumbbell"></i> Gym</p>
+                    <p><i class="fa-solid fa-microphone"></i> Karaoke</p>
+                    <p><i class="fa-solid fa-bacon"></i> BBQ ngoài trời</p>
+                    <p><i class="fa-solid fa-book"></i> Thư viện</p>
+                    <p><i class="fa-solid fa-motorcycle"></i> Cho thuê xe máy</p>
+                </div>
+            </div>
+        </article>
+        <div class="premium_bigger">
+            <img src="./image/premium (1).jpg" alt="Ảnh phòng Premium" class="premium_bigger_img">
+            <img src="./image/premium (2).jpg" alt="Ảnh phòng Premium" class="premium_bigger_img">
+            <img src="./image/premium (3).jpg" alt="Ảnh phòng Premium" class="premium_bigger_img">
+            <img src="./image/premium (4).jpg" alt="Ảnh phòng Premium" class="premium_bigger_img">
+            <img src="./image/premium (5).jpg" alt="Ảnh phòng Premium" class="premium_bigger_img">
+            <img src="./image/premium (6).jpg" alt="Ảnh phòng Premium" class="premium_bigger_img">
+        </div>
+    </section>
+    <footer>
+        <div class="social">
+            <div>
+                <div>
+                    <img src="./image/fblogo.png" alt="Facebook">
+                    <img src="./image/iglogo.png" alt="Instagram">
+                    <img src="./image/ytlogo.png" alt="Youtube">
+                    <img src="./image/messlogo.png" alt="messenger">
+                </div>
+                <div>
+                    <h3>Nhận thông tin mới nhất và các ưu đãi của The Sóng</h3>
+                    <input type="email" placeholder="Hãy nhập Email">
+                    <button>Đăng ký</button>
+                </div>
+            </div>
+            <div class="contact_info">
+                <h4>Liên hệ đặt phòng chi tiết</h4>
+                <p><i class="fa-solid fa-phone"></i> Hotline: 0938.169.445-0962.575.217-0949.600.555</p>
+                <p><i class="fa-solid fa-fax"></i> Phone/Fax: 028.3888.3379</p>
+                <p><i class="fa-solid fa-map-location-dot"></i> Địa chỉ: 28 Đường Thi Sách, phường Thắng Tam, Thành phố Vũng Tàu, Bà Rịa- Vũng Tàu</p>
+                <p><i class="fa-solid fa-map-location-dot"></i> Địa chỉ trụ sở chính: 60 Nguyễn ĐÌnh Chiểu, Đa Kao, Quận 1, Thành phó Hồ Chí Minh</p>
+                <p><i class="fa-solid fa-phone"></i> Điện thoại: 1800.0005</p>
+                <p><i class="fa-solid fa-business-time"></i> Thời gian làm việc: Thứ 2- Thứ 6: 08h00-23h00</p>
+                <p><i class="fa-solid fa-envelope"></i> Email: Thesong.service@gmail.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy 2024 copyright by The Sóng</p>
+        </div>
+    </footer>
+    <script>
+        let slideIndex = 0;
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.premium_img');
+            if (index >= slides.length) {
+                slideIndex = 0;
+            }
+            slides.forEach(slide => {
+            slide.classList.remove('active');
+            });
+            slides[slideIndex].classList.add('active');
+        }
+        function nextSlide() {
+            showSlide(++slideIndex);
+        }
+        document.addEventListener("DOMContentLoaded", function(){
+            showSlide(slideIndex);
+            setInterval(nextSlide, 4000);
+        });
+        function showSidebar(){
+            const Sidebar = document.getElementById("sidebar");
+            Sidebar.style.display="flex";
+        }
+        function hideSidebar (){
+            const Sidebar= document.getElementById("sidebar");
+            Sidebar.style.display="none";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./image/logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Trang chủ</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="./image/logomoi.jpg" alt="logo"></li>
+                <li class="hideonMobie"><a href="index.html">Trang chủ</a></li>
+                <li class="hideonMobie"><a href="destination.html">Điểm đến</a></li>
+                <li class="hideonMobie"><a href="room.html">Phòng nghỉ</a></li>
+                <li class="hideonMobie"><a href="service.html">Dịch vụ</a></li>
+                <li class="hideonMobie"><a href="contact.html">Liên hệ</a></li>
+                <li class="hideonMobie"><a href="login.html">Đặt phòng ngay</a></li>
+                <li onclick="showSidebar()" class="showonMobie"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+            <ul id="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="destination.html">Điểm đến</a></li>
+                <li><a href="room.html">Phòng nghỉ</a></li>
+                <li><a href="service.html">Dịch vụ</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="login.html">Đặt phòng ngay</a></li>
+            </ul>
+        </nav>
+        <div id="videoheading">
+            <video id="video" autoplay muted loop>
+                <source src="./video/FLYCAM TOÀN CẢNH DỰ ÁN THE SÓNG - VŨNG TÀU.mp4" type="video/mp4">
+                <source src="./video/Bãi Sau Vũng Tàu flycam 4K_1080p.mp4" type="video/mp4">
+                <source src="./video/Thành phố Vũng Tàu về đêm Flycam 4K_1080p.mp4" type="video/mp4">
+                Video về Khách sạn The Sóng và bãi biển Vũng Tàu.
+            </video>
+            <div id="changevideo">
+                <div class="controls">
+                    <button onclick="changeVideo('./video/FLYCAM TOÀN CẢNH DỰ ÁN THE SÓNG - VŨNG TÀU.mp4')"></button>
+                    <button onclick="changeVideo('./video/Bãi Sau Vũng Tàu flycam 4K_1080p.mp4')"></button>
+                    <button onclick="changeVideo('./video/Thành phố Vũng Tàu về đêm Flycam 4K_1080p.mp4')"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <article>
+            <div id="introduce">
+                <i class="fa-solid fa-hotel"></i>
+                <p class="intro">Khách sạn The Sóng - Nơi Hội Tụ Của Sự Đắc Địa và Đẳng Cấp</p>
+                <p class="introshow">Với vị trí tuyệt vời và không gian đầy đủ tiện nghi, khách sạn The Sóng ở Vũng Tàu là một biểu tượng mới của sự sang trọng và đẳng cấp trong ngành du lịch nghỉ dưỡng. Được xây dựng tại một vị trí "đắc địa" trên con đường Thi Sách, The Sóng không chỉ nằm cách bãi biển Bãi Sau của Vũng Tàu một bước chân mà còn là điểm dừng chân lý tưởng cho những du khách muốn khám phá vẻ đẹp của thành phố biển này.</p>
+                <i class="fa-solid fa-mug-saucer"></i>
+                <p class="intro">Trải Nghiệm Sống Tiện Nghi và Sang Trọng</p>
+                <p class="introshow">Khách sạn The Sóng không chỉ là nơi để nghỉ ngơi, mà còn là nơi để trải nghiệm sự tiện nghi và sang trọng. Với các căn hộ cao cấp, mỗi căn hộ đều được thiết kế đẹp mắt và trang bị đầy đủ tiện nghi để đảm bảo mọi khách hàng đều cảm thấy thoải mái và hài lòng trong suốt thời gian lưu trú.</p>
+                <i class="fa-solid fa-shower"></i>
+                <p class="intro">Tiện Ích và Dịch Vụ Hoàn Hảo</p>
+                <p class="introshow">Khách sạn The Sóng cung cấp một loạt các tiện ích và dịch vụ hoàn hảo để đáp ứng mọi nhu cầu của khách hàng. Từ các nhà hàng sang trọng đến các dịch vụ spa và phòng gym, mọi thứ đều được chuẩn bị kỹ lưỡng để đảm bảo một kỳ nghỉ dưỡng tuyệt vời nhất cho du khách.</p>
+                <i class="fa-solid fa-car"></i>
+                <p class="intro">Khám Phá Vẻ Đẹp của Vũng Tàu</p>
+                <p class="introshow">Nằm chỉ 2 giờ lái xe từ Thành phố Hồ Chí Minh, The Sóng cũng là điểm xuất phát thuận lợi cho những chuyến tham quan và khám phá các địa điểm nổi tiếng của Vũng Tàu và các khu vực lân cận như Đồng Nai, Long Hải và Bà Rịa. Du khách có thể dễ dàng khám phá những điểm du lịch nổi tiếng và trải nghiệm cuộc sống thịnh vượng của thành phố biển này.</p>
+                <i class="fa-solid fa-tree-city"></i>
+                <p class="intro">Sự Tươi Mát và Thúc Đẩy Sức Khỏe</p>
+                <p class="introshow">Nằm ngay bên bờ biển, căn hộ Condotel The Sóng mang đến không gian thoáng đãng, trong lành và thúc đẩy sự tươi mới và sức khỏe. Khách hàng sẽ được tận hưởng không gian sống tuyệt vời giữa làn gió biển mát mẻ và không khí trong lành của thiên nhiên.</p>
+            </div>
+            <div id="livingroom">
+                <i class="fa-solid fa-hotel"></i>
+                <h2>Phòng nghỉ chất lượng hoàng gia</h2>
+                <div class="room">
+                    <div>
+                        <a href="LuxyryRoom.html">
+                            <img src="./image/luxury (1).jpg" alt="Căn hộ Luxury" class="roomimg">
+                            <h3><p>Phòng Luxury View biển</p></h3>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="premiumRoom.html">
+                            <img src="./image/premium (2).jpg" alt="Căn hộ Premium" class="roomimg">
+                            <h3><p>Phòng Premium thuận tiện di chuyển</p></h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="room">
+                    <div>
+                        <a href="presidentRoom.html">
+                            <img src="./image/president (8).jpg" alt="Căn hộ President" class="roomimg">
+                            <h3><p>Phòng Resident View nhà cao tầng</p></h3>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="studioRoom.html">
+                            <img src="./image/studios (1).jpg" alt="Căn hộ Studios" class="roomimg">
+                            <h3><p>Phòng Studio tiện nghi</p></h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="slideChange">
+                    <img src="./image/beboilothien.png" alt="Bể bơi lộ thiên">
+                    <p class="slide-text">Thư giãn tại bể bơi lộ thiên dưới ánh nắng rực rỡ</p>
+                    <img src="./image/sanchoitreem.png" alt="Sân chơi trẻ em">
+                    <p class="slide-text">Trẻ em sẽ thích thú với khu vui chơi đầy màu sắc và an toàn</p>
+                    <img src="./image/bbqngoaitroi.png" alt="BBQ Ngoài trời">
+                    <p class="slide-text">Hòa mình vào không gian BBQ ngoài trời với đồ ăn thơm ngon</p>
+                    <img src="./image/gym.png" alt="Sân tập thể hình">
+                    <p class="slide-text">Luyện tập và duy trì sức khỏe tại sân tập thể hình hiện đại</p>
+                    <img src="./image/thuvien.png" alt="Thư viện">
+                    <p class="slide-text">Khám phá nguồn kiến thức phong phú tại thư viện của chúng tôi</p>
+                </div>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <div class="social">
+            <div>
+                <div>
+                    <img src="./image/fblogo.png" alt="Facebook">
+                    <img src="./image/iglogo.png" alt="Instagram">
+                    <img src="./image/ytlogo.png" alt="Youtube">
+                    <img src="./image/messlogo.png" alt="messenger">
+                </div>
+                <div>
+                    <h3>Nhận thông tin mới nhất và các ưu đãi của The Sóng</h3>
+                    <input type="email" placeholder="Hãy nhập Email">
+                    <button>Đăng ký</button>
+                </div>
+            </div>
+            <div class="contact_info">
+                <h4>Liên hệ đặt phòng chi tiết</h4>
+                <p><i class="fa-solid fa-phone"></i> Hotline: 0938.169.445-0962.575.217-0949.600.555</p>
+                <p><i class="fa-solid fa-fax"></i> Phone/Fax: 028.3888.3379</p>
+                <p><i class="fa-solid fa-map-location-dot"></i> Địa chỉ: 28 Đường Thi Sách, phường Thắng Tam, Thành phố Vũng Tàu, Bà Rịa- Vũng Tàu</p>
+                <p><i class="fa-solid fa-map-location-dot"></i> Địa chỉ trụ sở chính: 60 Nguyễn ĐÌnh Chiểu, Đa Kao, Quận 1, Thành phó Hồ Chí Minh</p>
+                <p><i class="fa-solid fa-phone"></i> Điện thoại: 1800.0005</p>
+                <p><i class="fa-solid fa-business-time"></i> Thời gian làm việc: Thứ 2- Thứ 6: 08h00-23h00</p>
+                <p><i class="fa-solid fa-envelope"></i> Email: Thesong.service@gmail.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy 2024 copyright by The Sóng</p>
+        </div>
+    </footer>
+    <script>
+        function showSidebar(){
+            const Sidebar = document.getElementById("sidebar");
+            Sidebar.style.display="flex";
+        }
+        function hideSidebar (){
+            const Sidebar= document.getElementById("sidebar");
+            Sidebar.style.display="none";
+        }
+        function changeVideo(videoSrc) {
+            var video = document.getElementById("video");
+            var source = document.createElement("source");
+            source.src = videoSrc;
+            source.type = 'video/mp4';
+            video.innerHTML = '';
+            video.appendChild(source);
+            video.load();
+            video.play();
+        }
+        function videoSound() {
+            var video = document.getElementById("video");
+            if (!video.paused && !video.muted) {
+            video.muted = true;
+            } else {
+                video.muted = false;
+                video.play();
+            }
+        }
+        document.getElementById("video").addEventListener("click", videoSound);
+        let slideIndex = 0;
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.slideChange img');
+            const texts = document.querySelectorAll('.slideChange .slide-text');
+            if (index >= slides.length) {
+                slideIndex = 0;
+            }
+            slides.forEach(slide => {
+            slide.classList.remove('active');
+            });
+            texts.forEach(text => {
+            text.classList.remove('active');
+            });
+            slides[slideIndex].classList.add('active');
+            texts[slideIndex].classList.add('active');
+        }
+        function nextSlide() {
+            showSlide(++slideIndex);
+        }
+        document.addEventListener("DOMContentLoaded", function(){
+            showSlide(slideIndex);
+            setInterval(nextSlide, 4000);
+        });
+    </script>
+</body>
+</html>
