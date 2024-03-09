@@ -10,7 +10,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     background-image: url(./image/login.png);
-    background-size: 100%;
+    background-size: 100% 105vh;
     background-repeat: no-repeat;
 }
 section {

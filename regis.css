@@ -8,9 +8,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
     background-image: url(./image/sign\ up.png);
-    background-size: 100% 600px;
+    background-size: 100% 105vh;
     background-repeat: no-repeat;
 }
 section {

@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body {
+    min-height: 100%;
+}
 nav {
     background-color: #ebece8;
 }
@@ -153,11 +156,20 @@ nav img {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+@media(max-width:600px){
+    .roomimg {
+        width: 100% !important;
+        margin: 10px 5px !important;
+
+    }
+    .slide-text {
+        padding-bottom: 20px;
+    }
+}
 .roomimg {
     width: 45vw;
     height: 300px;
     margin: 10px 20px;
-    align-items: center;
 }
 .slideChange .slide-text {
     width: 50%;
@@ -180,32 +192,10 @@ nav img {
     align-items: center;
     margin: 10px auto;
 }
-
 .slideChange img.active, .slideChange .slide-text.active {
     display: block;
     opacity: 1;
     animation: fadeIn 0.5s ease;
-}
-@keyframes fadeIn {
-    from {
-        opacity: 0; 
-    }
-    to {
-        opacity: 1; 
-    }
-}
-.Pre , .Next {
-    position: absolute;
-    top: 500%;
-    transform: translateY(-50%);
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-.Pre {
-    left: 5%;
 }
 footer {
     background-color: #aa1d1d;
@@ -335,6 +325,14 @@ footer {
     align-items: center;
     margin: 20px auto;
     animation: fadeIn 0.5s forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1; 
+    }
 }
 .prev, .next {
     position: absolute;
@@ -756,14 +754,16 @@ section h3 {
 
 /* service.html */
 
-.service_heading_img {
+.service_heading {
+    width: 98vw;
     height: 250px;
     background-image: url(./image/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
-.service_heading_img h2 {
+.service_heading h2 {
     text-align: center;
+    font-size: 2rem;
     padding-top: 100px;
 }
 #heading_img img{
