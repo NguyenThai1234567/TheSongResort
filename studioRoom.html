@@ -78,10 +78,11 @@
                 </div>
             </div>
         </article>
+        <h3>Ảnh chi tiết</h3>
         <div class="studio_bigger">
             <img src="./image/studios (1).jpg" alt="Ảnh phòng Studio" class="studio_bigger_img">
             <img src="./image/studios (2).jpg" alt="Ảnh phòng Studio" class="studio_bigger_img">
-             <img src="./image/studios (3).jpg" alt="Ảnh phòng Studio" class="studio_bigger_img">
+            <img src="./image/studios (3).jpg" alt="Ảnh phòng Studio" class="studio_bigger_img">
             <img src="./image/studios (4).jpg" alt="Ảnh phòng Studio" class="studio_bigger_img">
             <img src="./image/studios (5).jpg" alt="Ảnh phòng Studio" class="studio_bigger_img">
             <img src="./image/studios (6).jpg" alt="Ảnh phòng Studio" class="studio_bigger_img">
@@ -144,6 +145,18 @@
             const Sidebar= document.getElementById("sidebar");
             Sidebar.style.display="none";
         }
+        var Studio_bigger_img = document.querySelectorAll('.studio_bigger_img');
+        function clickToBigger (event){
+            var clickedImg = event.target;
+            Studio_bigger_img.forEach(function(bigger_img){
+                if (bigger_img !== clickedImg){
+                bigger_img.classList.remove('active');}
+            });
+            clickedImg.classList.toggle('active');
+        }
+        Studio_bigger_img.forEach(function(bigger_img){
+            bigger_img.addEventListener('click', clickToBigger);
+        });
     </script>
 </body>
 </html>

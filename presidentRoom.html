@@ -159,6 +159,18 @@
             const Sidebar= document.getElementById("sidebar");
             Sidebar.style.display="none";
         }
+        var President_bigger_img = document.querySelectorAll('.president_bigger_img');
+        function clickToBigger (event){
+            var clickedImg = event.target;
+            President_bigger_img.forEach(function(bigger_img){
+                if (bigger_img !== clickedImg){
+                bigger_img.classList.remove('active');}
+            });
+            clickedImg.classList.toggle('active');
+        }
+        President_bigger_img.forEach(function(bigger_img){
+            bigger_img.addEventListener('click', clickToBigger);
+        });
     </script>
 </body>
 </html>

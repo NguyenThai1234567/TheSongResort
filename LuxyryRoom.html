@@ -156,6 +156,18 @@
             showSlide(slideIndex);
             setInterval(nextSlide, 4000);
         });
+        var Luxury_bigger_img = document.querySelectorAll('.luxury_bigger_img');
+        function clickToBigger (event){
+            var clickedImg = event.target;
+            Luxury_bigger_img.forEach(function(bigger_img){
+                if (bigger_img !== clickedImg){
+                bigger_img.classList.remove('active');}
+            });
+            clickedImg.classList.toggle('active');
+        }
+        Luxury_bigger_img.forEach(function(bigger_img){
+            bigger_img.addEventListener('click', clickToBigger);
+        });
     </script>
 </body>
 </html>

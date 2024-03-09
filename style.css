@@ -634,17 +634,23 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-   margin: 10px 20px;
+    margin: 10px 20px;
+}
+section h3 {
+    font-size: 1.5rem;
+    margin-left:30px;
 }
 .luxury_bigger_img, .premium_bigger_img, .president_bigger_img, .studio_bigger_img {
     width: 30vw;
     height: 150px;
     margin: 10px;
 }
-.luxury_bigger_img:active {
-    width: 50vw;
-    height: auto;
-    scroll-behavior: smooth;
+.luxury_bigger_img.active, .premium_bigger_img.active,
+.president_bigger_img.active, .studio_bigger_img.active {
+    width: 70vw;
+    height: 500px;
+    display: block;
+    margin: 10px auto;
 }
 
 /* phòng nghỉ */
